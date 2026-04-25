@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bmqlwhekg3p6b"]
+
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_6e84v"]
+[ext_resource type="Script" uid="uid://bpfm0hcy8x43s" path="res://scripts/node_2d.gd" id="1_rnjyy"]
+[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="2_4dvvg"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4dvvg"]
+texture = ExtResource("1_6e84v")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_rnjyy"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_4dvvg")
+
+[node name="Node2D" type="Node2D" unique_id=398459404]
+script = ExtResource("1_rnjyy")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=839466708]
+tile_set = SubResource("TileSet_rnjyy")
+
+[node name="Player" parent="TileMapLayer" unique_id=226302411 instance=ExtResource("2_4dvvg")]

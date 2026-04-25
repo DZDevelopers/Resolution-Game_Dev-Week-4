@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://qjxaptxmo4kg"]
+
+[ext_resource type="Script" uid="uid://ckbps7rhuxxgg" path="res://scripts/label.gd" id="1_g1ol7"]
+
+[node name="tracker" type="Label" unique_id=1215687537]
+z_index = 4096
+offset_left = 2.0
+offset_top = 4.0
+offset_right = 60.0
+offset_bottom = 28.0
+text = "0"
+script = ExtResource("1_g1ol7")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=440693135]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 3.0
+offset_right = 56.0
+offset_bottom = 27.0
